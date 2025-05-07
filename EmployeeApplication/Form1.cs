@@ -86,7 +86,6 @@ namespace EmployeeApplication
                     return;
                 }
 
-                
                 if (!long.TryParse(txtEmployeeID.Text, out long employeeID))
                 {
                     MessageBox.Show("Invalid Employee ID. Please enter a valid numeric value.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
