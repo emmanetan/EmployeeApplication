@@ -82,13 +82,13 @@ namespace EmployeeApplication
                     string.IsNullOrWhiteSpace(txtLastName.Text) ||
                     string.IsNullOrWhiteSpace(txtPosition.Text))
                 {
-                    MessageBox.Show("All fields are required. Please fill in all fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("All fields are required. Please fill in all fields.",    "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-
+                
                 if (!long.TryParse(txtEmployeeID.Text, out long employeeID))
                 {
-                    MessageBox.Show("Invalid Employee ID. Please enter a valid numeric value.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Invalid Employee ID. Please enter a valid numeric value.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
